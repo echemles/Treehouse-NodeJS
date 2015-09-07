@@ -1,2 +1,3 @@
 var cityWeather = require("./weather");
-cityWeather.get("11104");
+var cities = process.argv.slice(2);
+cities.forEach(cityWeather.get);
